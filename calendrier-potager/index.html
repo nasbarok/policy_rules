@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calendrier Potager &amp; Jardin / Vegetable &amp; Garden Calendar — Politique de confidentialité / Privacy policy</title>
+<!--
+  Story 4-2 — SOURCE DE VÉRITÉ de la politique de confidentialité de l'app (paquet
+  com.nasbarok.vegatablecalendarads). Page autonome : ni script, ni ressource externe.
+  Publiée par COPIE, geste manuel du PO, vers `calendrier-potager/index.html` du dépôt public
+  `nasbarok/policy_rules` (GitHub Pages) : https://nasbarok.github.io/policy_rules/calendrier-potager/
+  Tenue alignée sur le code par `src/politiqueConfidentialite.guard.test.ts` (hôtes réseau,
+  permissions du manifeste, mentions obligatoires, phrases interdites) — dans CHAQUE langue.
+  ⛔ Ne pas y décrire l'export du jardin (Story 4.4) avant sa livraison.
+-->
+<style>
+  :root {
+    --bg: #fbfaf5;
+    --ink: #1f2a1c;
+    --ink-2: #4a5645;
+    --accent: #2f6b2a;
+    --line: #d9dccf;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141812;
+      --ink: #e6eadf;
+      --ink-2: #b4bdaa;
+      --accent: #8fcf7f;
+      --line: #2f382b;
+      --card: #1b2118;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 16px 48px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  nav.langs { max-width: 760px; margin: 0 auto; padding: 16px 0 0; font-size: 0.95rem; }
+  nav.langs a { margin-right: 16px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 24px 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+  h3 { font-size: 1.02rem; margin: 20px 0 4px; }
+  p, li { margin: 0 0 8px; }
+  ul { padding-left: 22px; margin: 0 0 8px; }
+  .meta { color: var(--ink-2); margin: 0 0 16px; }
+  .flow {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 4px 14px 8px;
+    margin: 12px 0;
+  }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 6px; }
+  dd { margin: 0 0 4px; }
+  code { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 0.9em; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 48px 0 0; }
+</style>
+</head>
+<body>
+<nav class="langs" aria-label="Langue / Language">
+  <a href="#fr" hreflang="fr">Français</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+<main>
+
+<article id="fr" lang="fr">
+<h1>Calendrier Potager &amp; Jardin — Politique de confidentialité</h1>
+<p class="meta">Mise à jour le <time datetime="2026-10-04">4 octobre 2026</time>. Application Android « Calendrier Potager &amp; Jardin » (paquet <code>com.nasbarok.vegatablecalendarads</code>).</p>
+
+<p>Cette page décrit, flux par flux, les données que l’application traite, pourquoi, qui les reçoit et sur quelle base légale. L’application n’a ni compte utilisateur ni serveur : le développeur ne reçoit et ne conserve aucune de vos données. Les seuls destinataires extérieurs sont l’IGN (cartes et adresses) et Google (publicité, achat intégré), décrits ci-dessous.</p>
+
+<h2>1. Responsable du traitement et contact</h2>
+<p>Le responsable est le développeur de l’application, <strong>Nasbarok</strong>. Pour toute question ou demande relative à vos données : <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a>.</p>
+
+<h2>2. Données traitées, flux par flux</h2>
+
+<div class="flow">
+<h3>2.1 Position de l’appareil (facultative)</h3>
+<dl>
+<dt>Quoi</dt><dd>Votre position <strong>approximative</strong> (permission Android « position approximative » ; jamais la position précise), demandée seulement si vous choisissez de cadrer votre terrain sur une photo aérienne, et seulement après un accord donné dans l’application.</dd>
+<dt>Pour quoi</dt><dd>Centrer la carte sur votre terrain.</dd>
+<dt>Qui la reçoit</dt><dd>La position elle-même n’est envoyée à personne. Les images de carte demandées autour d’elle (voir 2.3) révèlent toutefois à l’IGN la zone affichée.</dd>
+<dt>Base légale</dt><dd>Votre consentement (art. 6(1)(a) RGPD), retirable à tout moment dans Réglages (« Retirer mon consentement »), en plus de la permission Android que vous pouvez révoquer dans les paramètres du téléphone.</dd>
+<dt>Conservation</dt><dd>L’application ne conserve pas cette position : elle n’est ni enregistrée, ni historisée.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.2 Adresse que vous tapez (facultative)</h3>
+<dl>
+<dt>Quoi</dt><dd>Le texte d’adresse que vous saisissez pour trouver votre terrain — souvent votre domicile. Aucune permission Android n’est en jeu, mais c’est une donnée personnelle, transmise à un tiers ; un avis vous le dit avant l’envoi.</dd>
+<dt>Pour quoi</dt><dd>Trouver le lieu et centrer la carte dessus.</dd>
+<dt>Qui la reçoit</dt><dd>Le géocodeur de la Géoplateforme de l’IGN (<code>data.geopf.fr</code>), qui s’appuie sur la Base Adresse Nationale.</dd>
+<dt>Base légale</dt><dd>L’exécution du service que vous demandez (art. 6(1)(b) RGPD) : sans envoyer l’adresse, la recherche est impossible.</dd>
+<dt>Conservation</dt><dd>L’application ne conserve ni l’adresse ni la liste des résultats : pas d’historique, rien après la fermeture.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.3 Images de carte (vues Satellite et Plan)</h3>
+<dl>
+<dt>Quoi</dt><dd>Des requêtes d’images (tuiles BD ORTHO® et Plan IGN, et une image aérienne à la capture) portant la zone affichée, ainsi que, comme toute requête internet, l’adresse IP de votre connexion.</dd>
+<dt>Pour quoi</dt><dd>Afficher la carte et la photo aérienne de votre terrain.</dd>
+<dt>Qui les reçoit</dt><dd>La Géoplateforme de l’IGN (<code>data.geopf.fr</code>).</dd>
+<dt>Base légale</dt><dd>Celle du chemin qui a amené la carte : votre consentement (position, 2.1) ou l’exécution du service demandé (adresse, 2.2).</dd>
+<dt>Conservation</dt><dd>L’application n’écrit aucun cache de carte. Le composant web d’Android peut garder temporairement des images dans son propre cache, que vous pouvez effacer par Paramètres Android › Applications › Calendrier Potager &amp; Jardin › Stockage › Vider le cache.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.4 Photo aérienne conservée</h3>
+<dl>
+<dt>Quoi</dt><dd>Si vous la gardez, une copie de l’image aérienne de votre terrain, avec sa source (IGN) et sa date de récupération. Le fichier ne porte pas de coordonnées, mais <strong>l’image montre le lieu</strong> : c’est, par son contenu, une donnée de localisation.</dd>
+<dt>Pour quoi</dt><dd>Servir de fond au plan de votre jardin, hors ligne.</dd>
+<dt>Qui la reçoit</dt><dd>Personne : elle reste sur l’appareil et est exclue de la sauvegarde Android.</dd>
+<dt>Base légale</dt><dd>Votre consentement ou l’exécution du service demandé, comme en 2.3.</dd>
+<dt>Conservation</dt><dd>Jusqu’à ce que vous la retiriez (plan › « Photo » › « Retirer la photo »), ce qui la supprime de l’appareil. Lorsque vous retirez votre consentement à la position, l’application vous demande si vous voulez aussi la retirer.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.5 Photos de vos plantations et métadonnées EXIF</h3>
+<dl>
+<dt>Quoi</dt><dd>Les photos que vous prenez (« Prendre », via l’application appareil photo du téléphone) ou choisissez (« Choisir », via le sélecteur de photos du système, sans permission de lecture). L’original pris par l’application est enregistré dans votre galerie, dans le dossier <code>Pictures/Calendrier Potager</code> ; l’application garde aussi une petite vignette dans son espace privé.</dd>
+<dt>EXIF</dt><dd>Des métadonnées EXIF, l’application ne lit que la date de prise de vue (et l’orientation, pour afficher la vignette dans le bon sens). Elle n’en lit, n’en déduit et n’en enregistre aucune coordonnée. En revanche, l’original est conservé octet pour octet, EXIF compris : si votre appareil photo y a écrit une position, cette position reste dans le fichier de la galerie.</dd>
+<dt>Pour quoi</dt><dd>Illustrer et dater le suivi de vos plantations.</dd>
+<dt>Qui les reçoit</dt><dd>Personne : les photos ne sont jamais transmises par l’application. Les vignettes sont exclues de la sauvegarde Android.</dd>
+<dt>Base légale</dt><dd>L’exécution du service que vous demandez (art. 6(1)(b) RGPD), à votre geste.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.6 Carnet, plan et réglages</h3>
+<dl>
+<dt>Quoi</dt><dd>Ce que vous saisissez : plan du jardin et zones, plantations, observations datées, rappels, région choisie, surnoms, langue, état de l’achat. Pour chaque photo, le carnet ne garde que sa date et son adresse locale (URI), jamais l’image ni une coordonnée.</dd>
+<dt>Pour quoi</dt><dd>Faire fonctionner l’application.</dd>
+<dt>Qui les reçoit</dt><dd>Personne. Ces données restent sur l’appareil (voir aussi 5. Sauvegarde Android).</dd>
+<dt>Base légale</dt><dd>L’exécution du service que vous demandez (art. 6(1)(b) RGPD).</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.7 Notifications locales</h3>
+<dl>
+<dt>Quoi</dt><dd>Les rappels que vous programmez (semis, plantation, récolte…), planifiés par le téléphone lui-même.</dd>
+<dt>Pour quoi</dt><dd>Vous rappeler vos travaux au jardin.</dd>
+<dt>Qui les reçoit</dt><dd>Personne : ce ne sont pas des notifications poussées par un serveur.</dd>
+<dt>Base légale</dt><dd>L’exécution du service demandé ; la permission Android de notification est refusable et révocable.</dd>
+<dt>Conservation</dt><dd>Sur l’appareil, jusqu’à la suppression du rappel.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.8 Publicité (Google AdMob) et consentement (UMP)</h3>
+<dl>
+<dt>Quoi</dt><dd>La version gratuite affiche des publicités fournies par Google AdMob. Le kit AdMob de Google collecte notamment l’identifiant publicitaire de l’appareil, l’adresse IP (dont une position approximative peut être déduite), des informations sur l’appareil et les performances, et les interactions avec les annonces. Dans l’Espace économique européen et au Royaume-Uni, votre choix est recueilli par le formulaire de consentement de Google (UMP) avant toute publicité personnalisée ; vous pouvez le modifier à tout moment dans Réglages › « Confidentialité ».</dd>
+<dt>Pour quoi</dt><dd>Afficher des annonces, en mesurer l’efficacité, lutter contre la fraude.</dd>
+<dt>Qui les reçoit</dt><dd>Google (AdMob) et, selon votre choix, ses partenaires publicitaires. Google peut traiter ces données hors de l’Union européenne, selon sa propre politique.</dd>
+<dt>Base légale</dt><dd>Votre consentement, recueilli par l’UMP, pour la publicité personnalisée et l’accès à l’identifiant publicitaire ; l’intérêt légitime (art. 6(1)(f) RGPD) pour la publicité non personnalisée, qui finance la version gratuite, et pour la prévention de la fraude.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.9 Achat intégré « Retirer la pub »</h3>
+<dl>
+<dt>Quoi</dt><dd>L’achat du produit <code>remove_ads</code>, traité entièrement par Google Play (Google Play Billing). L’application ne voit jamais vos moyens de paiement ; elle reçoit seulement l’information « produit acheté », qu’elle garde sur l’appareil.</dd>
+<dt>Pour quoi</dt><dd>Débloquer la version sans publicité.</dd>
+<dt>Qui les reçoit</dt><dd>Google Play, qui traite le paiement.</dd>
+<dt>Base légale</dt><dd>L’exécution du contrat d’achat (art. 6(1)(b) RGPD).</dd>
+<dt>Conservation</dt><dd>L’état d’achat reste sur l’appareil ; côté Google, selon sa politique.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.10 Partager une fiche, ajouter à l’agenda</h3>
+<dl>
+<dt>Quoi</dt><dd>Quand vous appuyez sur « Partager » ou « Ajouter à l’agenda », le texte de la fiche (et ses dates) est remis à l’application que vous choisissez.</dd>
+<dt>Pour quoi</dt><dd>Partager une fiche ou noter ses dates dans votre agenda.</dd>
+<dt>Qui les reçoit</dt><dd>L’application et le destinataire que vous choisissez, à votre seul geste. Rien ne part sans lui.</dd>
+<dt>Base légale</dt><dd>L’exécution du service que vous demandez (art. 6(1)(b) RGPD), à votre geste.</dd>
+</dl>
+</div>
+
+<h2>3. Tiers et liens</h2>
+<ul>
+<li><strong>IGN — Géoplateforme</strong> (<code>data.geopf.fr</code>), Institut national de l’information géographique et forestière, établissement public, 73 avenue de Paris, 94160 Saint-Mandé : tuiles BD ORTHO® et Plan IGN, image aérienne, géocodeur de la Base Adresse Nationale. Politique de données personnelles : <a href="https://cartes.gouv.fr/donnees-personnelles">https://cartes.gouv.fr/donnees-personnelles</a> ; conditions d’utilisation : <a href="https://cartes.gouv.fr/cgu">https://cartes.gouv.fr/cgu</a>.</li>
+<li><strong>Licences des données IGN et de la Base Adresse Nationale</strong> : Licence Ouverte 2.0 — <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/">https://www.etalab.gouv.fr/licence-ouverte-open-licence/</a>. Attributions : « Source : IGN — BD ORTHO® — Licence Ouverte 2.0 », « Source : IGN — Plan IGN — Licence Ouverte 2.0 », « Adresses : Base Adresse Nationale — Licence Ouverte 2.0 ».</li>
+<li><strong>Google AdMob et UMP</strong> : <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> ; utilisation des données par les partenaires de Google : <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.</li>
+<li><strong>Google Play Billing</strong> (achat intégré) : <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+</ul>
+
+<h2>4. Durées de conservation</h2>
+<ul>
+<li><strong>Dans l’application</strong> : néant pour la position de l’appareil et pour l’adresse tapée — ni l’une ni l’autre n’est enregistrée. Les autres données (2.4 à 2.7) et l’état d’achat (2.9) restent sur l’appareil jusqu’à ce que vous les supprimiez.</li>
+<li><strong>Chez l’IGN</strong> : la durée de conservation des journaux de requêtes (requête, adresse IP, horodatage) est <strong>non publiée</strong> par l’IGN dans sa politique de données personnelles. Pour la connaître, vous pouvez vous adresser au délégué à la protection des données de l’IGN, désigné dans cette politique.</li>
+<li><strong>Chez Google</strong> : selon la politique de Google citée en 3.</li>
+</ul>
+
+<h2>5. Sauvegarde Android</h2>
+<p>La sauvegarde Android de votre compte Google (et le transfert vers un nouveau téléphone) reste active pour le carnet, le plan et les réglages, afin que vous les retrouviez en changeant d’appareil. La photo aérienne et les vignettes de photos en sont exclues. Le carnet sauvegardé ne porte, pour chaque photo, que sa date et son URI. Vous pouvez désactiver cette sauvegarde dans les paramètres Android.</p>
+
+<h2>6. Suppression</h2>
+<p>Le développeur ne détient aucune donnée vous concernant sur un serveur : il n’y a rien à supprimer de ce côté. Sur l’appareil :</p>
+<ol>
+<li>retirer une photo, ou supprimer une plantation, détruit son entrée dans l’application ;</li>
+<li>l’original d’une photo <strong>prise</strong> par cette installation de l’application est détruit avec elle ;</li>
+<li>l’original d’une photo <strong>choisie</strong> dans la galerie n’est jamais détruit par l’application ; et après une réinstallation, l’original d’une photo prise auparavant reste lui aussi dans la galerie.</li>
+</ol>
+<p>La désinstallation supprime les données internes de l’application (carnet, plan, photo aérienne, vignettes), sauf ce que la sauvegarde Android restaurerait ; mais elle laisse en place les originaux des photos, qui vivent dans votre galerie, dans <code>Pictures/Calendrier Potager</code>, hors de l’application. Supprimez-les depuis votre galerie si vous le souhaitez.</p>
+
+<h2>7. Permissions Android</h2>
+<p>Permissions que l’application déclare elle-même :</p>
+<ul>
+<li><code>android.permission.INTERNET</code> — cartes, adresses, publicité, achat.</li>
+<li><code>android.permission.ACCESS_COARSE_LOCATION</code> — position approximative, seulement à votre demande (2.1).</li>
+<li><code>android.permission.POST_NOTIFICATIONS</code> — vos rappels (2.7).</li>
+<li><code>android.permission.WRITE_EXTERNAL_STORAGE</code> — limitée à Android 9 et antérieur : enregistrer dans la galerie la photo que vous prenez (« Prendre »), demandée seulement à ce geste.</li>
+<li><code>com.android.vending.BILLING</code> — achat intégré via Google Play (2.9).</li>
+</ul>
+<p>Permissions ajoutées par les bibliothèques Google et de notifications :</p>
+<ul>
+<li><code>com.google.android.gms.permission.AD_ID</code> — lire l’identifiant publicitaire (Google Mobile Ads, 2.8).</li>
+<li><code>android.permission.ACCESS_ADSERVICES_AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>android.permission.ACCESS_ADSERVICES_TOPICS</code> — API publicitaires Privacy Sandbox d’Android (Google Mobile Ads, 2.8).</li>
+<li><code>android.permission.ACCESS_NETWORK_STATE</code> — savoir si le réseau est disponible (publicité, achat).</li>
+<li><code>android.permission.WAKE_LOCK</code> — services Google Play et notifications : terminer une tâche en cours.</li>
+<li><code>android.permission.RECEIVE_BOOT_COMPLETED</code> — reprogrammer vos rappels après un redémarrage du téléphone.</li>
+<li><code>android.permission.FOREGROUND_SERVICE</code> — services Google Play : tâche de fond visible.</li>
+</ul>
+<p>L’application ne demande ni l’appareil photo, ni la lecture de vos photos ou vidéos, ni la position contenue dans les photos.</p>
+
+<h2>8. Sécurité</h2>
+<p>Tous les échanges réseau de l’application se font en HTTPS (chiffrés en transit). Les données locales restent dans l’espace privé de l’application, à l’exception des originaux de photos enregistrés dans votre galerie.</p>
+
+<h2>9. Vos droits</h2>
+<p>Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité, et du droit de retirer à tout moment un consentement donné (Réglages › « Retirer mon consentement » pour la position, Réglages › « Confidentialité » pour la publicité). Le développeur ne détenant pas vos données, il vous orientera vers le bon interlocuteur (IGN, Google) : écrivez à <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a>. Vous pouvez aussi introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">https://www.cnil.fr</a>), ou auprès de l’autorité de contrôle de votre pays.</p>
+
+<h2>10. Enfants</h2>
+<p>L’application ne s’adresse pas spécifiquement aux enfants de moins de 13 ans, et le développeur ne collecte sciemment aucune donnée les concernant.</p>
+
+<h2>11. Modifications</h2>
+<p>Cette politique peut évoluer avec l’application ; la date de mise à jour figure en tête de page. La version en vigueur est publiée à l’adresse <a href="https://nasbarok.github.io/policy_rules/calendrier-potager/">https://nasbarok.github.io/policy_rules/calendrier-potager/</a>, accessible depuis Réglages › « Politique de confidentialité ».</p>
+</article>
+
+<hr>
+
+<article id="en" lang="en">
+<h1>Vegetable &amp; Garden Calendar — Privacy policy</h1>
+<p class="meta">Last updated <time datetime="2026-10-04">October 4, 2026</time>. Android app “Vegetable &amp; Garden Calendar” (package <code>com.nasbarok.vegatablecalendarads</code>).</p>
+
+<p>This page describes, flow by flow, the data the app processes, why, who receives it and on what legal basis. The app has no user account and no server: the developer receives and keeps none of your data. The only outside recipients are IGN (maps and addresses) and Google (advertising, in-app purchase), described below.</p>
+
+<h2>1. Controller and contact</h2>
+<p>The controller is the app’s developer, <strong>Nasbarok</strong>. For any question or request about your data: <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a>.</p>
+
+<h2>2. Data processed, flow by flow</h2>
+
+<div class="flow">
+<h3>2.1 Device location (optional)</h3>
+<dl>
+<dt>What</dt><dd>Your <strong>approximate</strong> location (Android “approximate location” permission; never the precise location), requested only if you choose to frame your land on an aerial photo, and only after you agree in the app.</dd>
+<dt>Purpose</dt><dd>Centering the map on your land.</dd>
+<dt>Recipient</dt><dd>The location itself is sent to nobody. However, the map images requested around it (see 2.3) reveal the displayed area to IGN.</dd>
+<dt>Legal basis</dt><dd>Your consent (GDPR art. 6(1)(a)), which you can withdraw at any time in Settings (“Withdraw my consent”), on top of the Android permission you can revoke in the phone settings.</dd>
+<dt>Retention</dt><dd>The app does not keep this location: it is neither saved nor logged.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.2 Address you type (optional)</h3>
+<dl>
+<dt>What</dt><dd>The address text you type to find your land — often your home. No Android permission is involved, but it is personal data sent to a third party; a notice tells you so before it is sent.</dd>
+<dt>Purpose</dt><dd>Finding the place and centering the map on it.</dd>
+<dt>Recipient</dt><dd>The geocoder of IGN’s Géoplateforme (<code>data.geopf.fr</code>), based on the Base Adresse Nationale (French national address database).</dd>
+<dt>Legal basis</dt><dd>Performance of the service you request (GDPR art. 6(1)(b)): without sending the address, the search is impossible.</dd>
+<dt>Retention</dt><dd>The app keeps neither the address nor the list of results: no history, nothing after closing.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.3 Map images (Satellite and Map views)</h3>
+<dl>
+<dt>What</dt><dd>Image requests (BD ORTHO® and Plan IGN tiles, and one aerial image at capture) carrying the displayed area, plus, like any internet request, your connection’s IP address.</dd>
+<dt>Purpose</dt><dd>Displaying the map and the aerial photo of your land.</dd>
+<dt>Recipient</dt><dd>IGN’s Géoplateforme (<code>data.geopf.fr</code>).</dd>
+<dt>Legal basis</dt><dd>That of the path that brought up the map: your consent (location, 2.1) or performance of the requested service (address, 2.2).</dd>
+<dt>Retention</dt><dd>The app writes no map cache. Android’s web component may temporarily keep images in its own cache, which you can clear through Android Settings › Apps › Vegetable &amp; Garden Calendar › Storage › Clear cache.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.4 Kept aerial photo</h3>
+<dl>
+<dt>What</dt><dd>If you keep it, a copy of the aerial image of your land, with its source (IGN) and retrieval date. The file carries no coordinates, but <strong>the image shows the place</strong>: by its content, it is location data.</dd>
+<dt>Purpose</dt><dd>Serving as the offline background of your garden plan.</dd>
+<dt>Recipient</dt><dd>Nobody: it stays on the device and is excluded from Android backup.</dd>
+<dt>Legal basis</dt><dd>Your consent or performance of the requested service, as in 2.3.</dd>
+<dt>Retention</dt><dd>Until you remove it (plan › “Photo” › “Remove the photo”), which deletes it from the device. When you withdraw your location consent, the app asks whether you also want to remove it.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.5 Photos of your plants and EXIF metadata</h3>
+<dl>
+<dt>What</dt><dd>The photos you take (“Take”, through the phone’s camera app) or choose (“Choose”, through the system photo picker, with no read permission). The original taken by the app is saved in your gallery, in the <code>Pictures/Calendrier Potager</code> folder; the app also keeps a small thumbnail in its private storage.</dd>
+<dt>EXIF</dt><dd>Of the EXIF metadata, the app reads only the date taken (and the orientation, to display the thumbnail the right way up). It reads, derives and saves no coordinates from it. However, the original is kept byte for byte, EXIF included: if your camera wrote a location into it, that location remains in the gallery file.</dd>
+<dt>Purpose</dt><dd>Illustrating and dating the follow-up of your plants.</dd>
+<dt>Recipient</dt><dd>Nobody: photos are never sent by the app. Thumbnails are excluded from Android backup.</dd>
+<dt>Legal basis</dt><dd>Performance of the service you request (GDPR art. 6(1)(b)), at your action.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.6 Journal, plan and settings</h3>
+<dl>
+<dt>What</dt><dd>What you enter: garden plan and areas, plantings, dated observations, reminders, chosen region, nicknames, language, purchase status. For each photo, the journal keeps only its date and its local address (URI), never the image or any coordinates.</dd>
+<dt>Purpose</dt><dd>Making the app work.</dd>
+<dt>Recipient</dt><dd>Nobody. This data stays on the device (see also 5. Android backup).</dd>
+<dt>Legal basis</dt><dd>Performance of the service you request (GDPR art. 6(1)(b)).</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.7 Local notifications</h3>
+<dl>
+<dt>What</dt><dd>The reminders you set (sowing, planting, harvest…), scheduled by the phone itself.</dd>
+<dt>Purpose</dt><dd>Reminding you of your garden tasks.</dd>
+<dt>Recipient</dt><dd>Nobody: these are not server push notifications.</dd>
+<dt>Legal basis</dt><dd>Performance of the requested service; the Android notification permission can be refused and revoked.</dd>
+<dt>Retention</dt><dd>On the device, until the reminder is deleted.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.8 Advertising (Google AdMob) and consent (UMP)</h3>
+<dl>
+<dt>What</dt><dd>The free version shows ads provided by Google AdMob. Google’s AdMob SDK collects in particular the device’s advertising ID, the IP address (from which an approximate location may be inferred), device and performance information, and interactions with ads. In the European Economic Area and the United Kingdom, your choice is collected by Google’s consent form (UMP) before any personalised advertising; you can change it at any time in Settings › “Privacy”.</dd>
+<dt>Purpose</dt><dd>Showing ads, measuring their effectiveness, preventing fraud.</dd>
+<dt>Recipient</dt><dd>Google (AdMob) and, depending on your choice, its advertising partners. Google may process this data outside the European Union, under its own policy.</dd>
+<dt>Legal basis</dt><dd>Your consent, collected by the UMP, for personalised advertising and access to the advertising ID; legitimate interest (GDPR art. 6(1)(f)) for non-personalised advertising, which funds the free version, and for fraud prevention.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.9 In-app purchase “Remove ads”</h3>
+<dl>
+<dt>What</dt><dd>The purchase of the <code>remove_ads</code> product, handled entirely by Google Play (Google Play Billing). The app never sees your payment details; it only receives the “product purchased” information, which it keeps on the device.</dd>
+<dt>Purpose</dt><dd>Unlocking the ad-free version.</dd>
+<dt>Recipient</dt><dd>Google Play, which processes the payment.</dd>
+<dt>Legal basis</dt><dd>Performance of the purchase contract (GDPR art. 6(1)(b)).</dd>
+<dt>Retention</dt><dd>The purchase status stays on the device; at Google, according to its policy.</dd>
+</dl>
+</div>
+
+<div class="flow">
+<h3>2.10 Sharing a sheet, adding to the calendar</h3>
+<dl>
+<dt>What</dt><dd>When you tap “Share” or “Add to calendar”, the sheet’s text (and its dates) is handed to the app you choose.</dd>
+<dt>Purpose</dt><dd>Sharing a sheet or noting its dates in your calendar.</dd>
+<dt>Recipient</dt><dd>The app and recipient you choose, at your action only. Nothing leaves without it.</dd>
+<dt>Legal basis</dt><dd>Performance of the service you request (GDPR art. 6(1)(b)), at your action.</dd>
+</dl>
+</div>
+
+<h2>3. Third parties and links</h2>
+<ul>
+<li><strong>IGN — Géoplateforme</strong> (<code>data.geopf.fr</code>), French National Institute of Geographic and Forest Information, public body, 73 avenue de Paris, 94160 Saint-Mandé, France: BD ORTHO® and Plan IGN tiles, aerial image, Base Adresse Nationale geocoder. Personal data policy: <a href="https://cartes.gouv.fr/donnees-personnelles">https://cartes.gouv.fr/donnees-personnelles</a>; terms of use: <a href="https://cartes.gouv.fr/cgu">https://cartes.gouv.fr/cgu</a>.</li>
+<li><strong>Licences of IGN and Base Adresse Nationale data</strong>: Open Licence 2.0 — <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/">https://www.etalab.gouv.fr/licence-ouverte-open-licence/</a>. Attributions: “Source: IGN — BD ORTHO® — Open Licence 2.0”, “Source: IGN — Plan IGN — Open Licence 2.0”, “Addresses: Base Adresse Nationale — Open Licence 2.0”.</li>
+<li><strong>Google AdMob and UMP</strong>: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>; how Google’s partners use data: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.</li>
+<li><strong>Google Play Billing</strong> (in-app purchase): <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+</ul>
+
+<h2>4. Retention periods</h2>
+<ul>
+<li><strong>In the app</strong>: none for the device location and for the typed address — neither is saved. Other data (2.4 to 2.7) and the purchase status (2.9) stay on the device until you delete them.</li>
+<li><strong>At IGN</strong>: the retention period of request logs (request, IP address, timestamp) is <strong>not published</strong> by IGN in its personal data policy. To find out, you can contact IGN’s data protection officer, named in that policy.</li>
+<li><strong>At Google</strong>: according to Google’s policy cited in 3.</li>
+</ul>
+
+<h2>5. Android backup</h2>
+<p>Android backup to your Google account (and transfer to a new phone) remains active for the journal, the plan and the settings, so you find them again when you change devices. The aerial photo and photo thumbnails are excluded from it. For each photo, the backed-up journal carries only its date and URI. You can turn this backup off in Android settings.</p>
+
+<h2>6. Deletion</h2>
+<p>The developer holds no data about you on any server: there is nothing to delete on that side. On the device:</p>
+<ol>
+<li>removing a photo, or deleting a planting, destroys its entry in the app;</li>
+<li>the original of a photo <strong>taken</strong> by this installation of the app is destroyed with it;</li>
+<li>the original of a photo <strong>chosen</strong> from the gallery is never destroyed by the app; and after a reinstallation, the original of a photo taken earlier also remains in the gallery.</li>
+</ol>
+<p>Uninstalling removes the app’s internal data (journal, plan, aerial photo, thumbnails), except what Android backup would restore; but it leaves the photo originals in place, as they live in your gallery, in <code>Pictures/Calendrier Potager</code>, outside the app. Delete them from your gallery if you wish.</p>
+
+<h2>7. Android permissions</h2>
+<p>Permissions the app declares itself:</p>
+<ul>
+<li><code>android.permission.INTERNET</code> — maps, addresses, advertising, purchase.</li>
+<li><code>android.permission.ACCESS_COARSE_LOCATION</code> — approximate location, only at your request (2.1).</li>
+<li><code>android.permission.POST_NOTIFICATIONS</code> — your reminders (2.7).</li>
+<li><code>android.permission.WRITE_EXTERNAL_STORAGE</code> — limited to Android 9 and earlier: saving the photo you take (“Take”) to the gallery, requested only at that action.</li>
+<li><code>com.android.vending.BILLING</code> — in-app purchase through Google Play (2.9).</li>
+</ul>
+<p>Permissions added by the Google and notification libraries:</p>
+<ul>
+<li><code>com.google.android.gms.permission.AD_ID</code> — reading the advertising ID (Google Mobile Ads, 2.8).</li>
+<li><code>android.permission.ACCESS_ADSERVICES_AD_ID</code>, <code>android.permission.ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>android.permission.ACCESS_ADSERVICES_TOPICS</code> — Android Privacy Sandbox advertising APIs (Google Mobile Ads, 2.8).</li>
+<li><code>android.permission.ACCESS_NETWORK_STATE</code> — knowing whether the network is available (advertising, purchase).</li>
+<li><code>android.permission.WAKE_LOCK</code> — Google Play services and notifications: finishing a task in progress.</li>
+<li><code>android.permission.RECEIVE_BOOT_COMPLETED</code> — rescheduling your reminders after the phone restarts.</li>
+<li><code>android.permission.FOREGROUND_SERVICE</code> — Google Play services: visible background task.</li>
+</ul>
+<p>The app requests neither the camera, nor reading your photos or videos, nor the location stored in photos.</p>
+
+<h2>8. Security</h2>
+<p>All of the app’s network exchanges use HTTPS (encrypted in transit). Local data stays in the app’s private storage, except the photo originals saved to your gallery.</p>
+
+<h2>9. Your rights</h2>
+<p>You have the rights of access, rectification, erasure, restriction, objection and portability, and the right to withdraw a given consent at any time (Settings › “Withdraw my consent” for location, Settings › “Privacy” for advertising). As the developer does not hold your data, the developer will direct you to the right party (IGN, Google): write to <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a>. You may also lodge a complaint with the CNIL, the French data protection authority (<a href="https://www.cnil.fr">https://www.cnil.fr</a>), or with your own supervisory authority.</p>
+
+<h2>10. Children</h2>
+<p>The app is not specifically aimed at children under 13, and the developer does not knowingly collect any data about them.</p>
+
+<h2>11. Changes</h2>
+<p>This policy may change with the app; the update date is shown at the top of the page. The current version is published at <a href="https://nasbarok.github.io/policy_rules/calendrier-potager/">https://nasbarok.github.io/policy_rules/calendrier-potager/</a>, reachable from Settings › “Privacy policy”.</p>
+</article>
+
+</main>
+</body>
+</html>
