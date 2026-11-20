@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Map Master — Suppression du compte / Account deletion</title>
+<!--
+  Story 31-5 — SOURCE DE VÉRITÉ de la page de demande de suppression de compte exigée par
+  Google Play (« Account deletion URL ») pour l'app Game Map Master (paquet com.nasbarok.gamemapmaster).
+  Page autonome : ni script, ni ressource externe.
+  URL cible : https://nasbarok.github.io/policy_rules/game-map-master/suppression-compte/
+  Publication par COPIE vers `game-map-master/suppression-compte/index.html` du dépôt public
+  `nasbarok/policy_rules` (GitHub Pages) : geste manuel de Nasbarok (stories 31-6 / 31-7).
+  Tenir alignée sur `AccountDeletionServiceImpl` (données supprimées / anonymisées).
+-->
+<style>
+  :root {
+    --bg: #f6f7f8;
+    --ink: #1a202c;
+    --ink-2: #4a5568;
+    --accent: #2f6b4a;
+    --danger: #c53030;
+    --line: #d5d9de;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171b21;
+      --ink: #e8ecf1;
+      --ink-2: #b3bcc8;
+      --accent: #7fd1a0;
+      --danger: #fc8181;
+      --line: #2d3748;
+      --card: #1f252d;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 16px 48px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  nav.langs { max-width: 760px; margin: 0 auto; padding: 16px 0 0; font-size: 0.95rem; }
+  nav.langs a { margin-right: 16px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 24px 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+  p, li { margin: 0 0 8px; }
+  ul, ol { padding-left: 22px; margin: 0 0 8px; }
+  .meta { color: var(--ink-2); margin: 0 0 16px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 14px 6px;
+    margin: 12px 0;
+  }
+  .warn { color: var(--danger); font-weight: 600; }
+  code { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 0.9em; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 48px 0 0; }
+</style>
+</head>
+<body>
+<nav class="langs" aria-label="Langue / Language">
+  <a href="#fr" hreflang="fr">Français</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+<main>
+
+<article id="fr" lang="fr">
+<h1>Game Map Master — suppression du compte</h1>
+<p class="meta">Application Android « Game Map Master » (paquet <code>com.nasbarok.gamemapmaster</code>), éditée par Nasbarok.</p>
+
+<h2>Supprimer son compte dans l'application</h2>
+<div class="card">
+<ol>
+  <li>Ouvrez Game Map Master et connectez-vous.</li>
+  <li>Allez dans <strong>Profil</strong> › <strong>Supprimer mon compte</strong>.</li>
+  <li>Lisez l'avertissement, saisissez votre <strong>mot de passe</strong>, puis touchez <strong>Supprimer définitivement</strong>.</li>
+</ol>
+<p>La suppression est immédiate et vous êtes déconnecté. Si vous organisez une partie, fermez d'abord votre terrain ; si vous êtes connecté à un terrain, quittez-le d'abord.</p>
+</div>
+<p class="warn">La suppression est définitive : le compte ne peut pas être restauré.</p>
+
+<h2>Demander la suppression sans l'application</h2>
+<div class="card">
+<p>Envoyez un e-mail à <a href="mailto:na.ouahit@gmail.com?subject=Suppression%20de%20compte%20Game%20Map%20Master">na.ouahit@gmail.com</a> <strong>depuis l'adresse e-mail de votre compte</strong>, avec l'objet « Suppression de compte Game Map Master », en indiquant votre pseudo.</p>
+<p>La demande est traitée sous <strong>30 jours</strong>.</p>
+</div>
+
+<h2>Données supprimées</h2>
+<ul>
+  <li>votre profil : pseudo, nom, prénom, téléphone, QR code personnel ;</li>
+  <li>votre adresse e-mail et votre mot de passe ;</li>
+  <li>vos positions GPS enregistrées pendant les parties ;</li>
+  <li>votre abonnement ;</li>
+  <li>vos jetons de connexion et de réinitialisation du mot de passe ;</li>
+  <li>vos favoris (dans les deux sens), vos invitations envoyées et reçues, vos préférences de notification, votre historique de visite des terrains et vos appartenances aux équipes.</li>
+</ul>
+
+<h2>Données anonymisées et conservées</h2>
+<p>Pour que l'historique des autres joueurs reste cohérent, certaines données de jeu sont conservées. Elles restent rattachées à un compte anonymisé (pseudonymisé), qui ne contient plus ni nom, ni e-mail, ni pseudo, ni coordonnées : votre pseudo y est remplacé par un identifiant anonyme (<code>deleted-…</code>), et plus personne ne peut se connecter à ce compte.</p>
+<ul>
+  <li>vos participations aux parties, vos scores et les événements de partie (captures de drapeau, de zones, scans de piste) ;</li>
+  <li>les terrains, cartes et scénarios que vous avez créés en tant qu'organisateur.</li>
+</ul>
+<p>Le texte libre que vous avez saisi vous-même dans les noms et descriptions de terrains, de cartes ou de scénarios est conservé tel que vous l'avez écrit.</p>
+<p>Rien d'autre n'est conservé.</p>
+</article>
+
+<hr>
+
+<article id="en" lang="en">
+<h1>Game Map Master — account deletion</h1>
+<p class="meta">Android app “Game Map Master” (package <code>com.nasbarok.gamemapmaster</code>), published by Nasbarok.</p>
+
+<h2>Delete your account in the app</h2>
+<div class="card">
+<ol>
+  <li>Open Game Map Master and sign in.</li>
+  <li>Go to <strong>Profile</strong> › <strong>Delete my account</strong>.</li>
+  <li>Read the warning, enter your <strong>password</strong>, then tap <strong>Delete permanently</strong>.</li>
+</ol>
+<p>Deletion is immediate and you are signed out. If you are hosting a game, close your field first; if you are connected to a field, leave it first.</p>
+</div>
+<p class="warn">Deletion is permanent: the account cannot be restored.</p>
+
+<h2>Request deletion without the app</h2>
+<div class="card">
+<p>Send an email to <a href="mailto:na.ouahit@gmail.com?subject=Suppression%20de%20compte%20Game%20Map%20Master">na.ouahit@gmail.com</a> <strong>from the email address of your account</strong>, with the subject “Suppression de compte Game Map Master”, and include your username.</p>
+<p>The request is handled within <strong>30 days</strong>.</p>
+</div>
+
+<h2>Data deleted</h2>
+<ul>
+  <li>your profile: username, first and last name, phone number, personal QR code;</li>
+  <li>your email address and password;</li>
+  <li>the GPS positions recorded during games;</li>
+  <li>your subscription;</li>
+  <li>your sign-in and password-reset tokens;</li>
+  <li>your favorites (both ways), invitations sent and received, notification preferences, field visit history and team memberships.</li>
+</ul>
+
+<h2>Data anonymised and kept</h2>
+<p>So that other players' history stays consistent, some game data is kept. It stays attached to an anonymised (pseudonymised) account that no longer holds any name, email, username or contact details: your username is replaced by an anonymous identifier (<code>deleted-…</code>), and no one can sign in to that account any more.</p>
+<ul>
+  <li>your game participations, scores and game events (flag and zone captures, trail scans);</li>
+  <li>the fields, maps and scenarios you created as a host.</li>
+</ul>
+<p>Free text you typed yourself in field, map or scenario names and descriptions is kept as you wrote it.</p>
+<p>Nothing else is kept.</p>
+</article>
+
+</main>
+</body>
+</html>

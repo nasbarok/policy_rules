@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Map Master — Politique de confidentialité / Privacy policy</title>
+<!--
+  Story 31-6 — SOURCE DE VÉRITÉ de la politique de confidentialité de l'app Game Map Master
+  (paquet com.nasbarok.gamemapmaster), liée depuis l'inscription et le profil
+  (`flutter-app/lib/config/external_links.dart`, privacyPolicyUrl).
+  Page autonome : ni script, ni ressource externe.
+  URL cible : https://nasbarok.github.io/policy_rules/game-map-master/
+  Publication par COPIE vers `game-map-master/index.html` du dépôt public `nasbarok/policy_rules`
+  (GitHub Pages) : geste manuel de Nasbarok, procédure au §1 de `docs/play-console-declarations.md`
+  (copie, commit, push, contrôle `curl | diff`), AVANT tout AAB qui porte le lien.
+  À chaque modification : changer la date des DEUX articles (FR et EN, `<time datetime>` et date lisible).
+  Tenue alignée sur le code par `scripts/tests/test_politique_confidentialite.sh` (permissions du
+  manifeste, hôtes de tuiles et de polices, dates, ancres, URL, durée de conservation des positions
+  = `airsoft.positions.retention-days` de `application.properties`, 31-20).
+-->
+<style>
+  :root {
+    --bg: #f6f7f8;
+    --ink: #1a202c;
+    --ink-2: #4a5568;
+    --accent: #2f6b4a;
+    --danger: #c53030;
+    --line: #d5d9de;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171b21;
+      --ink: #e8ecf1;
+      --ink-2: #b3bcc8;
+      --accent: #7fd1a0;
+      --danger: #fc8181;
+      --line: #2d3748;
+      --card: #1f252d;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 16px 48px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  nav.langs { max-width: 760px; margin: 0 auto; padding: 16px 0 0; font-size: 0.95rem; }
+  nav.langs a { margin-right: 16px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 24px 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+  h3 { font-size: 1.05rem; margin: 4px 0 4px; }
+  p, li { margin: 0 0 8px; }
+  ul, ol { padding-left: 22px; margin: 0 0 8px; }
+  .meta { color: var(--ink-2); margin: 0 0 16px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 14px 6px;
+    margin: 12px 0;
+  }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 6px; }
+  dd { margin: 0 0 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--ink-2); font-weight: 600; }
+  .warn { color: var(--danger); font-weight: 600; }
+  code { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 0.9em; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 2px solid var(--line); margin: 48px 0 0; }
+</style>
+</head>
+<body>
+<nav class="langs" aria-label="Langue / Language">
+  <a href="#fr" hreflang="fr">Français</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+<main>
+
+<article id="fr" lang="fr">
+<h1>Game Map Master — Politique de confidentialité</h1>
+<p class="meta">Mise à jour le <time datetime="2026-11-20">20 novembre 2026</time>. Application Android « Game Map Master » (paquet <code>com.nasbarok.gamemapmaster</code>), éditée par Nasbarok.</p>
+
+<p>Game Map Master sert à organiser et à jouer des parties d'airsoft par scénarios (désamorçage de bombe, chasse au trésor, pistage, capture de drapeau, zones de contrôle, élimination de cibles, battle royale). Cette page décrit les données que l'application et son serveur traitent, pourquoi, qui les reçoit, combien de temps elles sont gardées et comment les supprimer.</p>
+
+<h2>1. Responsable du traitement et contact</h2>
+<p>Le responsable du traitement est le développeur de l'application, <strong>Nasbarok</strong>. Pour toute question ou demande relative à vos données : <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a>.</p>
+
+<h2>2. Données traitées et finalités</h2>
+
+<div class="card">
+<h3>2.1 Compte</h3>
+<dl>
+<dt>Quoi</dt><dd>Pseudo, adresse e-mail et mot de passe (stocké seulement sous forme hachée) ; prénom et nom, facultatifs, saisis à l'inscription ; numéro de téléphone, facultatif, saisi dans le profil ; votre rôle (organisateur ou joueur).</dd>
+<dt>Pour quoi</dt><dd>Créer et sécuriser votre compte, vous identifier auprès des autres joueurs de vos parties, vous envoyer par e-mail le code de réinitialisation du mot de passe quand vous le demandez.</dd>
+<dt>Base légale</dt><dd>L'exécution du service que vous demandez (art. 6(1)(b) RGPD).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.2 QR code personnel</h3>
+<dl>
+<dt>Quoi</dt><dd>Un code, généré au hasard par l'application ou saisi par vous, affiché sous forme de QR code dans votre profil.</dd>
+<dt>Pour quoi</dt><dd>Être reconnu en jeu quand un autre joueur le scanne (scénario « élimination de cibles »).</dd>
+<dt>Base légale</dt><dd>L'exécution du service (art. 6(1)(b) RGPD).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.3 Position GPS précise</h3>
+<dl>
+<dt>Quoi</dt><dd>La position précise de votre téléphone, seulement pendant une partie en cours (détails au §3).</dd>
+<dt>Pour quoi</dt><dd>Faire fonctionner les scénarios qui dépendent du terrain (zones, sites, drapeaux, proximité), montrer votre position à votre équipe et à l'organisateur, rejouer la partie après coup.</dd>
+<dt>Base légale</dt><dd>Votre consentement (art. 6(1)(a) RGPD), recueilli dans l'application avant la première utilisation et retirable à tout moment (Profil › Préférences › « Révoquer le consentement GPS »), en plus de l'autorisation Android que vous pouvez retirer dans les paramètres du téléphone.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.4 Historique de jeu</h3>
+<dl>
+<dt>Quoi</dt><dd>Vos participations aux parties, vos équipes, vos scores et les événements de partie liés à votre pseudo (captures de drapeau ou de zone, scans de piste ou de trésor, éliminations), ainsi que les terrains, cartes et scénarios que vous créez en tant qu'organisateur.</dd>
+<dt>Pour quoi</dt><dd>Dérouler la partie, afficher les scores et l'historique des parties jouées.</dd>
+<dt>Base légale</dt><dd>L'exécution du service (art. 6(1)(b) RGPD).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.5 Invitations, équipes et favoris</h3>
+<dl>
+<dt>Quoi</dt><dd>Les invitations envoyées et reçues, vos appartenances aux équipes, vos joueurs et terrains favoris, votre historique de visite des terrains, vos préférences de notification.</dd>
+<dt>Pour quoi</dt><dd>Inviter des joueurs, composer les équipes, retrouver vos terrains et coéquipiers.</dd>
+<dt>Base légale</dt><dd>L'exécution du service (art. 6(1)(b) RGPD).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.6 Abonnement</h3>
+<dl>
+<dt>Quoi</dt><dd>Votre formule (gratuite ou PRO) et ses dates ; en cas d'achat, le jeton d'achat transmis par Google Play ; en cas d'activation gratuite, le code d'activation utilisé. L'application ne voit jamais vos moyens de paiement : le paiement est traité par Google Play.</dd>
+<dt>Pour quoi</dt><dd>Vérifier l'achat auprès de Google Play et ouvrir les fonctions PRO.</dd>
+<dt>Base légale</dt><dd>L'exécution du contrat d'abonnement (art. 6(1)(b) RGPD).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.7 Réglages sur l'appareil</h3>
+<dl>
+<dt>Quoi</dt><dd>Langue, réglages audio, état de votre consentement GPS, jeton de session : gardés sur le téléphone.</dd>
+<dt>Pour quoi</dt><dd>Garder vos préférences et votre connexion.</dd>
+<dt>Base légale</dt><dd>L'exécution du service (art. 6(1)(b) RGPD).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.8 Adresses IP</h3>
+<dl>
+<dt>Quoi</dt><dd>L'adresse IP de votre connexion, reçue par le serveur à chaque requête.</dd>
+<dt>Pour quoi</dt><dd>Limiter le nombre de requêtes et protéger le service contre les abus (détails au §7).</dd>
+<dt>Base légale</dt><dd>L'intérêt légitime (art. 6(1)(f) RGPD) : sécurité du service et prévention des abus.</dd>
+</dl>
+</div>
+
+<p>Game Map Master <strong>n'intègre aucun kit de publicité, de mesure d'audience ni de suivi de plantage</strong>. Vos données ne sont <strong>jamais vendues</strong> ni utilisées pour de la publicité.</p>
+
+<h2>3. Localisation</h2>
+<ul>
+  <li>L'application demande l'autorisation de localisation <strong>« pendant l'utilisation de l'application »</strong> seulement. Elle ne demande <strong>pas</strong> la localisation en arrière-plan (<code>ACCESS_BACKGROUND_LOCATION</code> n'est pas déclarée).</li>
+  <li>La position n'est collectée que <strong>pendant une partie en cours</strong>. Hors partie (accueil, terrain, salle d'attente, configuration d'un scénario, après la fin), rien n'est envoyé ; le serveur refuse toute position qui ne vient pas d'un participant ou de l'organisateur d'une partie en cours.</li>
+  <li>Pendant une partie, la collecte continue <strong>écran éteint</strong> : une partie lancée démarre un service au premier plan de type « localisation », signalé en permanence par la notification « Partie en cours ». Il ne démarre que si la localisation est autorisée et s'arrête à la fin de la partie.</li>
+  <li>Votre position est envoyée au serveur de l'application et transmise en direct à <strong>vos coéquipiers et à l'organisateur</strong> de la partie ; les autres équipes ne la voient pas. Le serveur en enregistre un point au plus toutes les 30 secondes.</li>
+  <li>Après la partie, l'application propose le <strong>replay</strong> de l'historique, qui montre le parcours de chaque joueur, réservé aux participants de la partie et à son organisateur. Les positions sont supprimées 90 jours après la fin de la partie (§7) ; le replay l'indique alors au lieu du parcours.</li>
+</ul>
+
+<h2>4. Caméra et notifications</h2>
+<ul>
+  <li><strong>Caméra</strong> : seulement pour scanner des QR codes (rejoindre une partie, chasse au trésor, scans de jeu). Les images ne sont <strong>ni enregistrées ni transmises</strong> : seul le texte du QR code lu est utilisé.</li>
+  <li><strong>Notifications</strong> : la notification « Partie en cours » du service au premier plan, et des notifications affichées par l'application elle-même (invitations, événements de partie), reçues par sa connexion au serveur. Aucun service de notifications poussées tiers n'est utilisé.</li>
+  <li><strong>Annonces vocales</strong> : les annonces de partie sont produites par le moteur de synthèse vocale de votre téléphone.</li>
+</ul>
+
+<h2>5. Permissions Android</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Usage</th></tr></thead>
+  <tbody>
+    <tr><td><code>android.permission.INTERNET</code></td><td>Échanges avec le serveur de l'application, fonds de carte, polices.</td></tr>
+    <tr><td><code>android.permission.ACCESS_NETWORK_STATE</code></td><td>Savoir si le réseau est disponible, pour se reconnecter en partie.</td></tr>
+    <tr><td><code>android.permission.CAMERA</code></td><td>Scanner des QR codes (§4).</td></tr>
+    <tr><td><code>android.permission.ACCESS_FINE_LOCATION</code></td><td>Position précise pendant une partie (§3).</td></tr>
+    <tr><td><code>android.permission.ACCESS_COARSE_LOCATION</code></td><td>Position approximative, demandée par Android avec la position précise (§3).</td></tr>
+    <tr><td><code>android.permission.POST_NOTIFICATIONS</code></td><td>Notification « Partie en cours », invitations et événements de partie (§4).</td></tr>
+    <tr><td><code>android.permission.FOREGROUND_SERVICE</code></td><td>Garder la partie active écran éteint (§3).</td></tr>
+    <tr><td><code>android.permission.FOREGROUND_SERVICE_LOCATION</code></td><td>Type du service au premier plan (« localisation ») : envoyer la position du joueur pendant la partie écran éteint, avec l'autorisation « pendant l'utilisation » ; le même service garde les annonces vocales.</td></tr>
+    <tr><td><code>android.permission.WAKE_LOCK</code></td><td>Empêcher la mise en veille du processeur pendant une partie.</td></tr>
+  </tbody>
+</table>
+<p>Des bibliothèques intégrées ajoutent aussi : <code>com.android.vending.BILLING</code> (achat de l'abonnement par Google Play), <code>android.permission.VIBRATE</code> (vibrations de jeu) et <code>android.permission.RECEIVE_BOOT_COMPLETED</code> (bibliothèque de notifications ; l'application ne démarre rien au démarrage du téléphone).</p>
+
+<h2>6. Destinataires et tiers</h2>
+<ul>
+  <li><strong>Hetzner Online GmbH</strong> (société allemande) : héberge le serveur et la base de données de l'application, sur des serveurs situés dans l'Union européenne.</li>
+  <li><strong>Les autres utilisateurs</strong> de vos parties : votre pseudo, vos scores et événements de partie ; votre position selon le §3.</li>
+  <li><strong>OpenStreetMap</strong> (<code>tile.openstreetmap.org</code>) et <strong>Esri</strong> (<code>server.arcgisonline.com</code>) : fournissent les fonds de carte (plan et vue satellite). Comme toute requête internet, ils reçoivent l'adresse IP de votre connexion et la zone de carte affichée.</li>
+  <li><strong>Google Fonts</strong> (<code>fonts.gstatic.com</code>) : polices de caractères téléchargées pour générer les PDF de QR codes des scénarios ; reçoit l'adresse IP.</li>
+  <li><strong>Google Play</strong> (<code>play.google.com</code>) : installation de l'application, paiement de l'abonnement (Google Play Billing) et vérification des achats par notre serveur.</li>
+  <li><strong>Un prestataire d'envoi d'e-mails</strong> : reçoit votre adresse e-mail et le code de réinitialisation, seulement quand vous demandez à réinitialiser votre mot de passe.</li>
+</ul>
+<p><strong>Transferts hors de l'Union européenne</strong> : Google (Google Play, Google Fonts) et Esri sont établis aux États-Unis, la fondation OpenStreetMap au Royaume-Uni. Ces prestataires peuvent traiter votre adresse IP et les données qu'ils reçoivent hors de l'Union européenne, selon les garanties prévues par ces prestataires (décision d'adéquation de l'Union européenne pour le Royaume-Uni ; cadre de protection des données UE–États-Unis ou clauses contractuelles types pour les prestataires établis aux États-Unis).</p>
+<p>Aucune autre transmission n'a lieu. Aucune donnée n'est vendue.</p>
+
+<h2>7. Durées de conservation</h2>
+<ul>
+  <li><strong>Positions GPS</strong> : supprimées automatiquement <strong>90 jours</strong> après la fin de la partie, plus tôt si l'organisateur supprime la partie de l'historique ou si votre compte est supprimé. Exception : le point enregistré avec un événement d'élimination (scénarios d'élimination de cibles et battle royale) est conservé avec les événements de la partie, jusqu'à ce que l'organisateur supprime la partie de l'historique ou jusqu'à la suppression de votre compte.</li>
+  <li><strong>Jetons de session et de réinitialisation du mot de passe</strong> : purgés chaque nuit après leur expiration.</li>
+  <li><strong>Adresses IP</strong> : jamais stockées en base de données. Le serveur les garde en mémoire pour limiter le nombre de requêtes, et les écrit dans ses journaux lorsqu'une limite est atteinte.</li>
+  <li><strong>Journaux du serveur</strong> : conservés le temps de leur rotation automatique.</li>
+  <li><strong>Tout le reste</strong> (compte, historique de jeu, invitations, équipes, favoris, abonnement) : jusqu'à la suppression de votre compte (§9).</li>
+</ul>
+
+<h2>8. Sécurité</h2>
+<p>Tous les échanges entre l'application et le serveur sont chiffrés en transit (<strong>HTTPS</strong> et <strong>WSS</strong>). Les mots de passe ne sont jamais stockés en clair : seul leur hachage (BCrypt) est conservé.</p>
+
+<h2>9. Suppression du compte</h2>
+<p>Vous pouvez supprimer votre compte à tout moment dans l'application (<strong>Profil</strong> › <strong>Supprimer mon compte</strong>), ou le demander par e-mail sans l'application. Les deux voies, et le détail de ce qui est supprimé et de ce qui est anonymisé, sont décrits sur la page <a href="https://nasbarok.github.io/policy_rules/game-map-master/suppression-compte/">Suppression du compte</a>.</p>
+<p>En résumé : votre profil (pseudo, nom, prénom, téléphone, QR code personnel), votre e-mail, votre mot de passe, vos positions, votre abonnement, vos jetons, favoris, invitations, préférences de notification, historique de visite et appartenances aux équipes sont <strong>supprimés</strong>. Vos participations, scores et événements de partie, et les terrains, cartes et scénarios que vous avez créés en tant qu'organisateur, sont <strong>conservés sous un compte anonymisé</strong> (pseudo remplacé par un identifiant <code>deleted-…</code>), pour que l'historique des autres joueurs reste cohérent.</p>
+<p class="warn">La suppression est définitive.</p>
+
+<h2>10. Vos droits</h2>
+<p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données, et du droit de retirer votre consentement à la localisation à tout moment. Écrivez à <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a> depuis l'adresse e-mail de votre compte ; la réponse est donnée sous un mois. Vous pouvez aussi introduire une réclamation auprès de la <strong>CNIL</strong> (<a href="https://www.cnil.fr/fr/plaintes">www.cnil.fr/fr/plaintes</a>) ou de l'autorité de protection des données de votre pays.</p>
+
+<h2>11. Mineurs</h2>
+<p>Game Map Master s'adresse aux pratiquants d'airsoft et n'est pas destiné aux enfants de moins de 15 ans. Si vous pensez qu'un enfant de moins de 15 ans a créé un compte, écrivez-nous : le compte sera supprimé.</p>
+
+<h2>12. Modifications</h2>
+<p>Cette politique peut évoluer avec l'application. La date de mise à jour figure en tête de page ; la version en vigueur est toujours celle publiée à cette adresse.</p>
+</article>
+
+<hr>
+
+<article id="en" lang="en">
+<h1>Game Map Master — Privacy policy</h1>
+<p class="meta">Last updated <time datetime="2026-11-20">November 20, 2026</time>. Android app “Game Map Master” (package <code>com.nasbarok.gamemapmaster</code>), published by Nasbarok.</p>
+
+<p>Game Map Master is used to organise and play scenario-based airsoft games (bomb defusal, treasure hunt, trail tracking, capture the flag, control zones, target elimination, battle royale). This page describes the data the app and its server process, why, who receives it, how long it is kept and how to delete it.</p>
+
+<h2>1. Data controller and contact</h2>
+<p>The data controller is the developer of the app, <strong>Nasbarok</strong>. For any question or request about your data: <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a>.</p>
+
+<h2>2. Data processed and purposes</h2>
+
+<div class="card">
+<h3>2.1 Account</h3>
+<dl>
+<dt>What</dt><dd>Username, email address and password (stored only as a hash); first and last name, optional, entered at registration; phone number, optional, entered in the profile; your role (host or player).</dd>
+<dt>Why</dt><dd>Create and secure your account, identify you to the other players of your games, email you the password-reset code when you ask for it.</dd>
+<dt>Legal basis</dt><dd>Performance of the service you request (Art. 6(1)(b) GDPR).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.2 Personal QR code</h3>
+<dl>
+<dt>What</dt><dd>A code, randomly generated by the app or typed by you, shown as a QR code in your profile.</dd>
+<dt>Why</dt><dd>Being recognised in a game when another player scans it (“target elimination” scenario).</dd>
+<dt>Legal basis</dt><dd>Performance of the service (Art. 6(1)(b) GDPR).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.3 Precise GPS location</h3>
+<dl>
+<dt>What</dt><dd>The precise location of your phone, only during a game in progress (details in §3).</dd>
+<dt>Why</dt><dd>Run the scenarios that depend on the field (zones, sites, flags, proximity), show your position to your team and to the host, replay the game afterwards.</dd>
+<dt>Legal basis</dt><dd>Your consent (Art. 6(1)(a) GDPR), asked in the app before first use and revocable at any time (Profile › Preferences › “Revoke GPS consent”), on top of the Android permission you can withdraw in the phone settings.</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.4 Game history</h3>
+<dl>
+<dt>What</dt><dd>Your game participations, teams, scores and the game events tied to your username (flag or zone captures, trail or treasure scans, eliminations), as well as the fields, maps and scenarios you create as a host.</dd>
+<dt>Why</dt><dd>Run the game, show scores and the history of past games.</dd>
+<dt>Legal basis</dt><dd>Performance of the service (Art. 6(1)(b) GDPR).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.5 Invitations, teams and favorites</h3>
+<dl>
+<dt>What</dt><dd>Invitations sent and received, team memberships, favorite players and fields, field visit history, notification preferences.</dd>
+<dt>Why</dt><dd>Invite players, build teams, find your fields and teammates again.</dd>
+<dt>Legal basis</dt><dd>Performance of the service (Art. 6(1)(b) GDPR).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.6 Subscription</h3>
+<dl>
+<dt>What</dt><dd>Your plan (free or PRO) and its dates; for a purchase, the purchase token sent by Google Play; for a free activation, the activation code used. The app never sees your payment details: payment is handled by Google Play.</dd>
+<dt>Why</dt><dd>Verify the purchase with Google Play and unlock the PRO features.</dd>
+<dt>Legal basis</dt><dd>Performance of the subscription contract (Art. 6(1)(b) GDPR).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.7 Settings on the device</h3>
+<dl>
+<dt>What</dt><dd>Language, audio settings, GPS consent state, session token: kept on the phone.</dd>
+<dt>Why</dt><dd>Keep your preferences and your sign-in.</dd>
+<dt>Legal basis</dt><dd>Performance of the service (Art. 6(1)(b) GDPR).</dd>
+</dl>
+</div>
+
+<div class="card">
+<h3>2.8 IP addresses</h3>
+<dl>
+<dt>What</dt><dd>Your connection's IP address, received by the server with each request.</dd>
+<dt>Why</dt><dd>Rate-limit requests and protect the service against abuse (details in §7).</dd>
+<dt>Legal basis</dt><dd>Legitimate interest (Art. 6(1)(f) GDPR): security of the service and abuse prevention.</dd>
+</dl>
+</div>
+
+<p>Game Map Master <strong>contains no advertising, analytics or crash-reporting SDK</strong>. Your data is <strong>never sold</strong> nor used for advertising.</p>
+
+<h2>3. Location</h2>
+<ul>
+  <li>The app asks for the location permission <strong>“while using the app”</strong> only. It does <strong>not</strong> ask for background location (<code>ACCESS_BACKGROUND_LOCATION</code> is not declared).</li>
+  <li>Location is collected only <strong>during a game in progress</strong>. Outside a game (home, field, lobby, scenario setup, after the end), nothing is sent; the server rejects any position that does not come from a participant or the host of a game in progress.</li>
+  <li>During a game, collection continues <strong>with the screen off</strong>: a started game runs a foreground service of type “location”, always shown by the “Game in progress” notification. It starts only if location is allowed and stops when the game ends.</li>
+  <li>Your position is sent to the app's server and relayed live to <strong>your teammates and the host</strong> of the game; other teams do not see it. The server records one point at most every 30 seconds.</li>
+  <li>After the game, the app offers the history <strong>replay</strong>, which shows each player's route, restricted to the game's participants and its host. Positions are deleted 90 days after the game ends (§7); the replay then says so instead of showing the routes.</li>
+</ul>
+
+<h2>4. Camera and notifications</h2>
+<ul>
+  <li><strong>Camera</strong>: only to scan QR codes (joining a game, treasure hunt, in-game scans). Images are <strong>neither stored nor sent</strong>: only the text of the scanned QR code is used.</li>
+  <li><strong>Notifications</strong>: the “Game in progress” notification of the foreground service, and notifications shown by the app itself (invitations, game events), received through its connection to the server. No third-party push notification service is used.</li>
+  <li><strong>Voice announcements</strong>: game announcements are produced by your phone's text-to-speech engine.</li>
+</ul>
+
+<h2>5. Android permissions</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Use</th></tr></thead>
+  <tbody>
+    <tr><td><code>android.permission.INTERNET</code></td><td>Communication with the app's server, map tiles, fonts.</td></tr>
+    <tr><td><code>android.permission.ACCESS_NETWORK_STATE</code></td><td>Know whether the network is available, to reconnect during a game.</td></tr>
+    <tr><td><code>android.permission.CAMERA</code></td><td>Scan QR codes (§4).</td></tr>
+    <tr><td><code>android.permission.ACCESS_FINE_LOCATION</code></td><td>Precise location during a game (§3).</td></tr>
+    <tr><td><code>android.permission.ACCESS_COARSE_LOCATION</code></td><td>Approximate location, requested by Android together with precise location (§3).</td></tr>
+    <tr><td><code>android.permission.POST_NOTIFICATIONS</code></td><td>“Game in progress” notification, invitations and game events (§4).</td></tr>
+    <tr><td><code>android.permission.FOREGROUND_SERVICE</code></td><td>Keep the game running with the screen off (§3).</td></tr>
+    <tr><td><code>android.permission.FOREGROUND_SERVICE_LOCATION</code></td><td>Type of the foreground service (“location”): send the player's position during the game with the screen off, under the “while using the app” permission; the same service keeps the voice announcements.</td></tr>
+    <tr><td><code>android.permission.WAKE_LOCK</code></td><td>Keep the processor awake during a game.</td></tr>
+  </tbody>
+</table>
+<p>Bundled libraries also add: <code>com.android.vending.BILLING</code> (subscription purchase through Google Play), <code>android.permission.VIBRATE</code> (game vibrations) and <code>android.permission.RECEIVE_BOOT_COMPLETED</code> (notification library; the app starts nothing when the phone boots).</p>
+
+<h2>6. Recipients and third parties</h2>
+<ul>
+  <li><strong>Hetzner Online GmbH</strong> (German company): hosts the app's server and database, on servers located in the European Union.</li>
+  <li><strong>Other users</strong> of your games: your username, scores and game events; your position as described in §3.</li>
+  <li><strong>OpenStreetMap</strong> (<code>tile.openstreetmap.org</code>) and <strong>Esri</strong> (<code>server.arcgisonline.com</code>): provide the map tiles (street and satellite views). Like any internet request, they receive your connection's IP address and the map area displayed.</li>
+  <li><strong>Google Fonts</strong> (<code>fonts.gstatic.com</code>): fonts downloaded to generate the scenario QR-code PDFs; receives the IP address.</li>
+  <li><strong>Google Play</strong> (<code>play.google.com</code>): app installation, subscription payment (Google Play Billing) and purchase verification by our server.</li>
+  <li><strong>An email delivery provider</strong>: receives your email address and the reset code, only when you ask to reset your password.</li>
+</ul>
+<p><strong>Transfers outside the European Union</strong>: Google (Google Play, Google Fonts) and Esri are based in the United States, the OpenStreetMap Foundation in the United Kingdom. These providers may process your IP address and the data they receive outside the European Union, under the safeguards these providers apply (EU adequacy decision for the United Kingdom; EU–US Data Privacy Framework or standard contractual clauses for providers based in the United States).</p>
+<p>No other transfer takes place. No data is sold.</p>
+
+<h2>7. Retention</h2>
+<ul>
+  <li><strong>GPS positions</strong>: deleted automatically <strong>90 days</strong> after the game ends, earlier if the host deletes the game from the history or if your account is deleted. Exception: the point recorded with an elimination event (target elimination and battle royale scenarios) is kept with the game events, until the host deletes the game from the history or until your account is deleted.</li>
+  <li><strong>Session and password-reset tokens</strong>: purged every night once expired.</li>
+  <li><strong>IP addresses</strong>: never stored in the database. The server keeps them in memory to rate-limit requests, and writes them to its logs when a limit is reached.</li>
+  <li><strong>Server logs</strong>: kept for the duration of their automatic rotation.</li>
+  <li><strong>Everything else</strong> (account, game history, invitations, teams, favorites, subscription): until your account is deleted (§9).</li>
+</ul>
+
+<h2>8. Security</h2>
+<p>All traffic between the app and the server is encrypted in transit (<strong>HTTPS</strong> and <strong>WSS</strong>). Passwords are never stored in clear text: only their hash (BCrypt) is kept.</p>
+
+<h2>9. Account deletion</h2>
+<p>You can delete your account at any time in the app (<strong>Profile</strong> › <strong>Delete my account</strong>), or request it by email without the app. Both ways, and the detail of what is deleted and what is anonymised, are described on the <a href="https://nasbarok.github.io/policy_rules/game-map-master/suppression-compte/#en">Account deletion</a> page.</p>
+<p>In short: your profile (username, first and last name, phone number, personal QR code), email, password, positions, subscription, tokens, favorites, invitations, notification preferences, visit history and team memberships are <strong>deleted</strong>. Your participations, scores and game events, and the fields, maps and scenarios you created as a host, are <strong>kept under an anonymised account</strong> (username replaced by a <code>deleted-…</code> identifier), so that other players' history stays consistent.</p>
+<p class="warn">Deletion is permanent.</p>
+
+<h2>10. Your rights</h2>
+<p>Under the GDPR, you have the right to access, rectify, erase, restrict, object to and port your data, and to withdraw your location consent at any time. Write to <a href="mailto:na.ouahit@gmail.com">na.ouahit@gmail.com</a> from your account's email address; you will get an answer within one month. You may also lodge a complaint with the French data protection authority <strong>CNIL</strong> (<a href="https://www.cnil.fr/fr/plaintes">www.cnil.fr/fr/plaintes</a>) or with the data protection authority of your country.</p>
+
+<h2>11. Children</h2>
+<p>Game Map Master is meant for airsoft players and is not intended for children under 15. If you believe a child under 15 has created an account, write to us: the account will be deleted.</p>
+
+<h2>12. Changes</h2>
+<p>This policy may change with the app. The update date is shown at the top of the page; the version in force is always the one published at this address.</p>
+</article>
+
+</main>
+</body>
+</html>
