@@ -40,6 +40,7 @@ This data is encrypted in transit (TLS). For more information, see [Google's Pri
 - The Game uses OpenAI to generate dynamic event descriptions, world news and the end-of-game summary
 - The request is sent from your device to OpenAI and contains game context only, including the choices you make in the game
 - No name, email address, account or other personal identifier is sent to OpenAI; like any internet service, OpenAI receives your device's IP address with the request
+- OpenAI processes these requests on our behalf, as a service provider
 - AI responses are used solely for gameplay
 - See [OpenAI's Privacy Policy](https://openai.com/policies/privacy-policy/)
 
@@ -71,8 +72,9 @@ We use collected information to:
 
 The Game is rated PEGI 7 and is suitable for ages 7+. We do not knowingly collect personal information from children under 13. The Game:
 - Does not require account creation
-- Does not collect names, emails, or personal identifiers
-- Shows personalized ads only with your consent, given in Google's consent form; otherwise ads are non-personalized
+- Never asks for your name, email address or an account (the advertising identifiers listed above are collected by AdMob)
+- Where the law requires consent (for example in the European Economic Area, the United Kingdom and Switzerland), shows personalized ads only with your consent, given in Google's consent form and changeable from the "Ad privacy" entry of the game menu; elsewhere, Google may personalize ads
+- Lets you opt out of personalized ads at any time in your device settings
 
 ### Your Rights
 
@@ -145,6 +147,7 @@ Ces données sont chiffrées en transit (TLS). Pour plus d'informations, consult
 - Le Jeu utilise OpenAI pour générer des descriptions d'événements dynamiques, des actualités du monde et le résumé de fin de partie
 - La requête part de votre appareil vers OpenAI et ne contient que le contexte de partie, dont vos choix dans le jeu
 - Aucun nom, adresse e-mail, compte ni autre identifiant personnel n'est envoyé à OpenAI ; comme tout service internet, OpenAI reçoit l'adresse IP de votre appareil avec la requête
+- OpenAI traite ces requêtes pour notre compte, en tant que prestataire de services
 - Les réponses de l'IA servent uniquement au jeu
 - Voir la [Politique de confidentialité d'OpenAI](https://openai.com/policies/privacy-policy/)
 
@@ -176,8 +179,9 @@ Nous utilisons les informations collectées pour :
 
 Le Jeu est classé PEGI 7 et convient aux 7 ans et plus. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans. Le Jeu :
 - Ne nécessite pas de création de compte
-- Ne collecte pas de noms, d'e-mails ni d'identifiants personnels
-- N'affiche des publicités personnalisées qu'avec votre consentement, donné dans le formulaire de consentement de Google ; sinon les publicités ne sont pas personnalisées
+- Ne demande jamais votre nom, votre adresse e-mail ni de compte (les identifiants publicitaires listés plus haut sont collectés par AdMob)
+- Là où la loi exige un consentement (par exemple dans l'Espace économique européen, au Royaume-Uni et en Suisse), n'affiche des publicités personnalisées qu'avec votre consentement, donné dans le formulaire de Google et modifiable depuis l'entrée « Confidentialité des pubs » du menu du Jeu ; ailleurs, Google peut personnaliser les publicités
+- Vous permet de refuser à tout moment les publicités personnalisées dans les paramètres de l'appareil
 
 ### Vos droits
 
@@ -218,15 +222,15 @@ Si vous avez des questions concernant cette Politique de confidentialité, conta
 
 ## Summary / Résumé
 
-| Data Type | Collected | Stored Where | Shared |
+| Data type / Donnée | Collected / Collectée | Stored where / Stockée où | Shared / Partagée |
 |-----------|-----------|--------------|--------|
-| Game saves | Yes | Local device | No |
-| Device ID | Yes (AdMob) | Google servers | Google |
-| Location | Approximate (AdMob) | Google servers | Google |
-| App interactions and diagnostics | Yes (AdMob) | Google servers | Google |
-| Game context, including your choices | Yes (AI content) | OpenAI servers | No (processed by OpenAI on our behalf) |
-| Payment info | No | Google Play | No |
-| Personal info | No | N/A | No |
+| Game saves / Sauvegardes | Yes / Oui | Local device / Appareil | No / Non |
+| Device ID / Identifiant d'appareil | Yes (AdMob) / Oui (AdMob) | Google servers / Serveurs Google | Google |
+| Location / Localisation | Approximate (AdMob) / Approximative (AdMob) | Google servers / Serveurs Google | Google |
+| App interactions and diagnostics / Interactions et diagnostics | Yes (AdMob) / Oui (AdMob) | Google servers / Serveurs Google | Google |
+| Game context, including your choices / Contexte de partie, dont vos choix | Yes (AI content) / Oui (contenu IA) | OpenAI servers / Serveurs OpenAI | No, processed by OpenAI on our behalf / Non, traité par OpenAI pour notre compte |
+| Payment info / Informations de paiement | No / Non | Google Play | No / Non |
+| Name, email, account / Nom, e-mail, compte | No / Non | N/A | No / Non |
 
 ---
 
