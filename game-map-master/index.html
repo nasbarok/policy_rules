@@ -88,7 +88,7 @@
 
 <article id="fr" lang="fr">
 <h1>Game Map Master — Politique de confidentialité</h1>
-<p class="meta">Mise à jour le <time datetime="2026-11-20">20 novembre 2026</time>. Application Android « Game Map Master » (paquet <code>com.nasbarok.gamemapmaster</code>), éditée par Nasbarok.</p>
+<p class="meta">Mise à jour le <time datetime="2026-11-23">23 novembre 2026</time>. Application Android « Game Map Master » (paquet <code>com.nasbarok.gamemapmaster</code>), éditée par Nasbarok.</p>
 
 <p>Game Map Master sert à organiser et à jouer des parties d'airsoft par scénarios (désamorçage de bombe, chasse au trésor, pistage, capture de drapeau, zones de contrôle, élimination de cibles, battle royale). Cette page décrit les données que l'application et son serveur traitent, pourquoi, qui les reçoit, combien de temps elles sont gardées et comment les supprimer.</p>
 
@@ -222,6 +222,7 @@
   <li><strong>Jetons de session et de réinitialisation du mot de passe</strong> : purgés chaque nuit après leur expiration.</li>
   <li><strong>Adresses IP</strong> : jamais stockées en base de données. Le serveur les garde en mémoire pour limiter le nombre de requêtes, et les écrit dans ses journaux lorsqu'une limite est atteinte.</li>
   <li><strong>Journaux du serveur</strong> : conservés le temps de leur rotation automatique.</li>
+  <li><strong>Sauvegardes</strong> : la base de données est sauvegardée chaque nuit, chiffrée, sur le serveur, avec une copie chiffrée hors du serveur sur un ordinateur de l'éditeur, dans l'Union européenne. Les sauvegardes sont remplacées en continu par les suivantes : en général sous 7 jours, au plus tard sous <strong>30 jours</strong>. Une donnée supprimée (compte, positions purgées) peut donc subsister dans les sauvegardes chiffrées jusqu'à 30 jours après sa suppression.</li>
   <li><strong>Tout le reste</strong> (compte, historique de jeu, invitations, équipes, favoris, abonnement) : jusqu'à la suppression de votre compte (§9).</li>
 </ul>
 
@@ -247,7 +248,7 @@
 
 <article id="en" lang="en">
 <h1>Game Map Master — Privacy policy</h1>
-<p class="meta">Last updated <time datetime="2026-11-20">November 20, 2026</time>. Android app “Game Map Master” (package <code>com.nasbarok.gamemapmaster</code>), published by Nasbarok.</p>
+<p class="meta">Last updated <time datetime="2026-11-23">November 23, 2026</time>. Android app “Game Map Master” (package <code>com.nasbarok.gamemapmaster</code>), published by Nasbarok.</p>
 
 <p>Game Map Master is used to organise and play scenario-based airsoft games (bomb defusal, treasure hunt, trail tracking, capture the flag, control zones, target elimination, battle royale). This page describes the data the app and its server process, why, who receives it, how long it is kept and how to delete it.</p>
 
@@ -381,6 +382,7 @@
   <li><strong>Session and password-reset tokens</strong>: purged every night once expired.</li>
   <li><strong>IP addresses</strong>: never stored in the database. The server keeps them in memory to rate-limit requests, and writes them to its logs when a limit is reached.</li>
   <li><strong>Server logs</strong>: kept for the duration of their automatic rotation.</li>
+  <li><strong>Backups</strong>: the database is backed up every night, encrypted, on the server, with an encrypted copy off the server on a computer of the publisher, in the European Union. Backups are continuously replaced by newer ones: usually within 7 days, at the latest within <strong>30 days</strong>. Deleted data (account, purged positions) may therefore remain in the encrypted backups for up to 30 days after its deletion.</li>
   <li><strong>Everything else</strong> (account, game history, invitations, teams, favorites, subscription): until your account is deleted (§9).</li>
 </ul>
 
